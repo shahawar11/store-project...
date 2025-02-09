@@ -6,6 +6,7 @@ import Image from "next/image";
 import { MdLocalPhone } from "react-icons/md";
 import { Button } from "../ui/button";
 import Logofinal from "./Logofinal";
+import GoogleTranslate from './GoogleTranslate';
 
 
 const Navbar = () => {
@@ -56,6 +57,9 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
+            <div>
+              <GoogleTranslate/>
+            </div>
             <Link href="#" className="">
               <Button className="divide-x divide-black bg-muted text-black flex flex-row p-1">
                 <MdLocalPhone className="ml-1" />

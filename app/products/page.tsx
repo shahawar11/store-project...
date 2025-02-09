@@ -1,7 +1,14 @@
-import React from 'react'
+import ProductDemo from "@/components/products/page";
+import React from "react";
+import Contact from "./contact";
 
-function ProductsPage() {
-  return <div>ProductsPage</div>;
-}
+const page = () => {
+  return (
+    <div>
+       <ProductDemo />
+       <Contact/>
+    </div>
+  );
+};
 
-export default ProductsPage
+export default page;

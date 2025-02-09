@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Container from "@/components/global/Container";
 import Footer from "@/components/Footer";
 
-
+ 
 
 export const metadata: Metadata = {
   title: "Farmer Website",
@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        <Container className="py-24"> {children}</Container>
+        <Container className="py-"> 
+         {children}
+      </Container>
         <Footer/>
         {/* {children} */}
       </body>
