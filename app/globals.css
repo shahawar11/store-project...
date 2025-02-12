@@ -73,14 +73,14 @@
     @apply flex items-center justify-center;
   }
   .padding {
-    @apply pt-16 px-8 md:px-12;
+    @apply pt-16 px-8 md:px-12 2xl:px-16;
   }
   .aligned {
     @apply flex items-center justify-center;
   }
 }
-
-.wave {
+ /* wave xl */
+.wavexl {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -91,15 +91,144 @@
   z-index: 35;
 }
 
-.wave svg {
+.wavexl svg {
   position: relative;
   display: block;
   width: calc(155% + 1.3px);
   height: 395px;
 }
 
-.wave .shape-fill {
+.wavexl .shape-fill {
   fill: #7b3f00;
+}
+
+/* wave md */
+.wavemd {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 35;
+}
+
+.wavemd svg {
+    position: relative;
+    display: block;
+    width: calc(155% + 1.3px);
+    height: 250px;
+}
+
+.wavemd .shape-fill {
+    fill: #7b3f00;
+}
+
+.custom-shape-divider-bottom-1738938424 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 35;
+}
+
+.custom-shape-divider-bottom-1738938424 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1738938424 .shape-fill {
+    fill: #7b3f00;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1738938424 svg {
+        width: calc(173% + 1.3px);
+        height: 97px;
+    }
+}
+
+
+.wavetopxl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 35;
+}
+
+.wavetopxl svg {
+    position: relative;
+    display: block;
+    width: calc(155% + 1.3px);
+    height: 395px;
+}
+
+.wavetopxl .shape-fill {
+    fill: #713f12;
+}
+.wavetopmd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 35;
+}
+
+.wavetopmd svg {
+    position: relative;
+    display: block;
+    width: calc(155% + 1.3px);
+    height: 250px;
+}
+
+.wavetopmd .shape-fill {
+    fill: #713f12;
+}
+
+.wavetopsm {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    
+    z-index: 35;
+    
+}
+
+.wavetopsm svg {
+    position: relative;
+    display: block;
+    width: calc(157% + 1.3px);
+    height: 280px;
+    
+}
+
+.wavetopsm .shape-fill {
+    fill: #713f12;
+}
+
+/** For mobile devices **/
+
+    @media (max-width: 767px) {
+    .wavesm svg {
+        width: calc(188% + 1.5px);
+        height: 282px;
+    }
+
 }
 
 .whatsapp-link {
@@ -135,4 +264,35 @@
   .whatsapp-link.visible {
     bottom: 30px;
   }
+}
+
+
+.custom-shape-divider-bottom-1738940562 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 35;
+}
+
+.custom-shape-divider-bottom-1738940562 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1738940562 .shape-fill {
+    fill: #713f12;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1738940562 svg {
+        width: calc(208% + 1.3px);
+        height: 149px;
+    }
 }
