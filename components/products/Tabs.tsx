@@ -10,7 +10,7 @@ import ProductHerbicides from './productsList/Herbicides';
 
 export function TabsDemo() {
   return (
-    <section className="mt-10 md:px-10 py-20 lg:p-20 flex justify-center">
+    <section className="mt-10 md:px-10 py-20 lg:p-20 flex justify-center bg-yellow-50">
       <Tabs defaultValue="Herbicides" className="w-full">
         <TabsList className="flex justify-center flex-col lg:flex-row w-full text-xl">
           <TabsTrigger value="Herbicides" className="flex-grow">

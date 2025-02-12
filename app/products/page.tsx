@@ -1,12 +1,12 @@
 import ProductDemo from "@/components/products/page";
 import React from "react";
-import Contact from "./contact";
-
+import ContactInfo from "../reviews/page";
+ 
 const page = () => {
   return (
     <div>
        <ProductDemo />
-       <Contact/>
+       <ContactInfo/>
     </div>
   );
 };
