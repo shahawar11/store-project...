@@ -5,12 +5,12 @@ import Logofinal from "./navbar/Logofinal";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-gray-300 px-8 md:px-12">
+    <footer className="bg-black text-gray-300 px-8 md:px-12  mt-24">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-wrap justify-between">
           {/* Logo and Company Name */}
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
-            <Logofinal/>
+            <Logofinal />
           </div>
 
           {/* Quick Links */}
@@ -41,7 +41,6 @@ export default function Footer() {
                   About
                 </Link>
               </li>
-              
             </ul>
           </div>
 
@@ -49,7 +48,6 @@ export default function Footer() {
           <div className="w-full md:w-1/4 b-6 mb-6  md:mb-0 md:-ml-6">
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2">
-              
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2" />
                 <a
@@ -72,16 +70,15 @@ export default function Footer() {
             </ul>
           </div>
 
-          
-            <div className="flex left-0  mx-auto md:hidden hover:text-white transition-colors  text-sm font-thin">
-              <Link href="/PrivacyPolicy" className=" mr-1 ">
-                <div className="underline">Privacy Policy</div>
-              </Link>
-              <div className=" ">|</div>
+          <div className="flex left-0  mx-auto md:hidden hover:text-white transition-colors  text-sm font-thin">
+            <Link href="/PrivacyPolicy" className=" mr-1 ">
+              <div className="underline">Privacy Policy</div>
+            </Link>
+            <div className=" ">|</div>
 
-              <Link href="/TermsConditions" className=" ml-1 ">
-                <span className="underline"> Terms & Conditions</span>
-              </Link>
+            <Link href="/TermsConditions" className=" ml-1 ">
+              <span className="underline"> Terms & Conditions</span>
+            </Link>
           </div>
         </div>
 

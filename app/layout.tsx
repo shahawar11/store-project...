@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Container from "@/components/global/Container";
 import Footer from "@/components/Footer";
+import WhatsappLive from "./WhatsappLive";
 
  
 
@@ -20,11 +21,17 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
+<<<<<<< HEAD
         <Container className="py-"> 
          {children}
       </Container>
+=======
+        {/* <Container className="py-24"> {children}</Container> */}
+        {children}
+
+>>>>>>> origin/shahPracticeOne
         <Footer/>
-        {/* {children} */}
+        <WhatsappLive/>
       </body>
     </html>
   );

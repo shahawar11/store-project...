@@ -15,11 +15,10 @@ const Navbar = () => {
     setOpenNavbar((openNavbar) => !openNavbar);
   };
   return (
-    
-    <header className=" absolute top-0 inset-0  h-24 flex items-center bg-white z-50">
-      <div className="mx-auto lg:max-w-7xl w-full px-8  md:px-12 lg:px-12 h-full items-center">
+    <header className=" absolute top-0 inset-0  h-24 flex items-center bg-white z-50 border shadow-lg">
+      <div className="mx-auto lg:max-w-7xl w-full px-8  md:px-12 lg:px-12  h-full items-center">
         <nav className="flex justify-between items-center h-full ">
-          <Logofinal/>
+          <Logofinal />
           <div
             className={`
             flex flex-col space-y-10 inset-0 fixed top-0  h-[100dvh] bg-white dark:bg-gray-950 lg:!bg-transparent py-20 px-4 md:px-8 2xl:px-16
@@ -35,7 +34,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/products"
-                  className="transition ease-linear hover:text-[#16A34A] dark:hover:text-white"
+                  className="transition ease-linear hover:text-primary dark:hover:text-white"
                 >
                   Products
                 </Link>
@@ -43,7 +42,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/services"
-                  className="transition ease-linear hover:text-[#16A34A] dark:hover:text-white"
+                  className="transition ease-linear hover:text-primary dark:hover:text-white"
                 >
                   Services
                 </Link>
@@ -51,12 +50,13 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/about"
-                  className="transition ease-linear hover:text-[#16A34A] dark:hover:text-white "
+                  className="transition ease-linear hover:text-primary dark:hover:text-white "
                 >
                   About
                 </Link>
               </li>
             </ul>
+<<<<<<< HEAD
             <div>
               <GoogleTranslate/>
             </div>
@@ -64,6 +64,15 @@ const Navbar = () => {
               <Button className="divide-x divide-black bg-muted text-black flex flex-row p-1">
                 <MdLocalPhone className="ml-1" />
                 <h2 className="px-1">7550195506</h2>
+=======
+            <Link href="tel:+919488239034" className="inline-block">
+              <Button
+                className="divide-x divide-black bg-muted text-black flex items-center p-2 hover:bg-primary hover:opacity-50 transition"
+                aria-label="Contact us by phone"
+              >
+                <MdLocalPhone className="ml-2 text-lg" aria-hidden="true" />
+                <span className="px-2">Contact Us</span>
+>>>>>>> origin/shahPracticeOne
               </Button>
             </Link>
           </div>
@@ -98,7 +107,6 @@ const Navbar = () => {
         </nav>
       </div>
     </header>
-  
   );
 };
 export default Navbar;
