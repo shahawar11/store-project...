@@ -37,14 +37,14 @@ const GoogleTranslate = () => {
     };
 
     return (
-        <div>
+        <div >
             {/* Hidden Google Translate Element */}
             <div id="google_translate_element" className="hidden"></div>
 
             {/* Language Selector Dropdown */}
             <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                    <Button variant="outline">🌍 {selectedLang.toUpperCase()}</Button>
+                    <Button variant="outline" className="bg-green-50">🌍 {selectedLang.toUpperCase()}</Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
                     <DropdownMenuItem onClick={() => changeLanguage("en")}>English</DropdownMenuItem>

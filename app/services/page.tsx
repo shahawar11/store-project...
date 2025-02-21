@@ -14,8 +14,7 @@ function ServicesPage() {
      <Chooseus/>
  <CompareDemo/>
  <ImageCards/>    
- <ContactInfo/> 
-  </div>
+   </div>
   )
 }
 

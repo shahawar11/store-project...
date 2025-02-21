@@ -1,13 +1,18 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
+import Herbicides from "@/components/products/productList/Herbicides"
+ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Separator } from "@/components/ui/separator"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import ProductHerbicides from './productsList/Herbicides';
-
+import Fungicides from "./productList/Fungicides"
+import Insecticides from "./productList/Insecticides"
+import Seeds from "./productList/seeds"
+import Machines from "./productList/machines"
+import Fertilizer from "./productList/Fertilizer"
+ 
 export function TabsDemo() {
   return (
     <section className="mt-10 md:px-10 py-20 lg:p-20 flex justify-center bg-yellow-50">
@@ -32,37 +37,41 @@ export function TabsDemo() {
           <TabsTrigger value="Machines" className="flex-grow">
             Machines
           </TabsTrigger>
+          <Separator orientation="vertical" className="bg-yellow-950 hidden lg:block" />
+          <TabsTrigger value="Fertilizer" className="flex-grow">
+Fertilizer          </TabsTrigger>
         </TabsList>
         <TabsContent value="Herbicides" className="mt-20 w-full">
           <div className="  gap-4 w-full">
-            <ProductHerbicides />
-          </div>
+            <Herbicides/>
+           </div>
         </TabsContent>
         <TabsContent value="Fungicides" className="mt-20">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
-            <Card>
-              <CardHeader>
-                <CardTitle>Password</CardTitle>
-                <CardDescription>Change your password here. After saving, you'll be logged out.</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <div className="space-y-1">
-                  <Label htmlFor="current">Current password</Label>
-                  <Input id="current" type="password" />
-                </div>
-                <div className="space-y-1">
-                  <Label htmlFor="new">New password</Label>
-                  <Input id="new" type="password" />
-                </div>
-              </CardContent>
-              <CardFooter>
-                <Button>Save password</Button>
-              </CardFooter>
-            </Card>
+          <div className="gap-4 w-full">
+            <Fungicides/>
           </div>
         </TabsContent>
-        {/* Add other TabsContent components for Insecticides, Seeds, and Machines */}
-      </Tabs>
+        <TabsContent value="Insecticides" className="mt-20">
+          <div className="gap-4 w-full">
+            <Insecticides/>
+          </div>
+        </TabsContent>
+        <TabsContent value="Seeds" className="mt-20">
+          <div className="gap-4 w-full">
+<Seeds/>          </div>
+        </TabsContent>
+        <TabsContent value="Machines" className="mt-20">
+          <div className="gap-4 w-full">
+            <Machines/>
+          </div>
+        </TabsContent>
+        <TabsContent value="Fertilizer" className="mt-20">
+          <div className="gap-4 w-full">
+            <Fertilizer/>
+          </div>
+        </TabsContent>
+        
+       </Tabs>
     </section>
   )
 }

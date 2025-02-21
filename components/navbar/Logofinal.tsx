@@ -9,7 +9,7 @@ export default function Logofinal() {
       <div className="flex min-w-max items-center">
         <Link
           href="/"
-          className="flex items-center gap-x-2 text-2xl font-semibold text-gray-700 dark:text-gray-300"
+          className="flex items-center gap-x-2 text-2xl font-semibold text-blue-950 dark:text-gray-300"
         >
           <Image
             src="/wheat.svg"

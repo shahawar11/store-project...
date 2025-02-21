@@ -5,7 +5,7 @@ import Logofinal from "./navbar/Logofinal";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-gray-300 px-8 md:px-12  mt-24">
+    <footer className="bg-black text-gray-300 px-8 md:px-12  ">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-wrap justify-between">
           {/* Logo and Company Name */}
@@ -60,10 +60,8 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-1" />
                 <span>
-                  38, Parvathy Nagar 3rd St,
-                  <br />
-                  Chennai - 600073
-                  <br />
+                   <br />
+                   <br />
                   Tamil Nadu, India
                 </span>
               </li>

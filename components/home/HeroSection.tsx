@@ -61,14 +61,11 @@ function HeroSection() {
           </div>
         </div>
 
-<<<<<<< HEAD
-        {/* Wave Section */}
+         {/* Wave Section */}
         <div className="wave hidden lg:block  ">
-=======
-        {/* Wave Section xl */}
+         {/* Wave Section xl */}
         <div className="wavexl hidden 2xl:block">
->>>>>>> origin/shahPracticeOne
-          <svg
+           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1200 120"
@@ -80,9 +77,10 @@ function HeroSection() {
             ></path>
           </svg>
         </div>
+        </div>
       </section>
     </div>
   );
-}
+} 
 
 export default HeroSection;
