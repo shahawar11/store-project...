@@ -1,8 +1,7 @@
 import React from 'react'
 import HeroSection from './Hero'
 import { TabsDemo } from './Tabs'
-import ContactInfo from '@/app/reviews/page'
-
+ 
 const ProductDemo = () => {
   return (
      <>

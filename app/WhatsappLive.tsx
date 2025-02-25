@@ -6,7 +6,7 @@ import React from "react";
 function WhatsappLive() {
   const whatsappNumber = "+91 94882 39034";
   const baseUrl = "https://api.whatsapp.com/send/";
-  const encodedMessage = `Hello, I want details regarding rental cars.`;
+  const encodedMessage = `Hello,Welcome to vivasayi`;
   const whatsappLink = `${baseUrl}?phone=${whatsappNumber}&text=${encodedMessage}&type=phone_number&app_absent=0`;
 
   useEffect(() => {

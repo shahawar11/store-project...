@@ -6,8 +6,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { Button } from "@/components/ui/button"; // ShadCN button
 import L from "leaflet"; // Import Leaflet
-import { Card } from "./ui/card";
-
+ 
 // Fix: Define a custom marker icon using the local image
 const customIcon = new L.Icon({
     iconUrl: "/location.png", // Path to the image in the public folder

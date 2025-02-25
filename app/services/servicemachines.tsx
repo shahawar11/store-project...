@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { TypewriterEffectSmoothDemo } from "./Typewriter"
+import Image from 'next/image'
 
 const ImageCards = () => {
   const cards = [
@@ -35,7 +36,9 @@ const ImageCards = () => {
             <div key={index} className="relative w-64 flex flex-col">
               {/* Image container that extends outside the card */}
               <div className="absolute -top-[100px] left-1/2 transform -translate-x-1/2 w-48 h-48 z-10 hover:shadow-2xl duration-300">
-                <img
+                <Image
+                width={400}
+                height={400}
                   src={card.image || "/placeholder.svg"}
                   alt={card.title}
                   className="w-full h-full object-cover rounded-md shadow-md"

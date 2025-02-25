@@ -3,15 +3,8 @@ import Logofinal from "@/components/navbar/Logofinal";
 import { Button } from "@/components/ui/button"
 import { Monitor, Phone, MapPin } from "lucide-react"
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-
 export default function ContactInfo() {
-         const router = useRouter();
-    
-        const goToMapPage = () => {
-            router.push("/shop-map"); // Redirect to the map page
-        };
-  return (
+     return (
     <div className="bg-green-950 flex flex-col w-full md:p-8 mt-[250px] md:h-[300px] ">
       <div className="min-h-[300px] mx-auto bg-green-50 rounded-t-xl px-2 md:px-40 py-20 -mt-[150px] relative ">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-20 text-center   ">

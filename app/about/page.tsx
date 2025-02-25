@@ -1,31 +1,22 @@
- 
+"use client"; 
 import React from "react";
 import {
   Sprout,
   Users,
   Shield,
-  Trophy,
-  Leaf,
+   Leaf,
   Star,
-  TrendingUp,
-  HeartHandshake,
-} from "lucide-react";
+ } from "lucide-react";
 import { NumberTickerDemo } from "@/components/NumberTickerDemo";
 import { Card, CardContent } from "@/components/ui/card";
-import ShopMap from "@/components/ShopMap";
+import dynamic from "next/dynamic";
 
 const AboutPage = () => {
-  const stats = [
-    { number: "3+", label: "Years of Excellence" },
-    { number: "1000+", label: "Happy Farmers" },
-    { number: "95%", label: "Customer Satisfaction" },
-    { number: "500+", label: "Products" },
-  ];
+  const ShopMap = dynamic(() => import("@/components/ShopMap"), { ssr: false });
 
   return (
     <div className="min-h-screen padding bg-white">
-      {/* Hero Section with Diagonal Design */}
-
+ 
       {/* Our Story Section */}
       <section className=" py-20">
         <div className="max-w-7xl mx-auto px-4 ">
@@ -38,7 +29,7 @@ const AboutPage = () => {
                 Growing Together with Our Farming Community
               </h2>
               <p className="text-xl text-gray-600">
-                At{" "}
+                At 
                 <span className="text-green-600 font-semibold">Vivasayi</span> ,
                 we understand that modern farming requires both traditional
                 wisdom and innovative solutions. Our journey began with a simple
@@ -91,7 +82,7 @@ const AboutPage = () => {
               Comprehensive Agricultural Solutions
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Everything you need to maximize your farm's potential
+            Everything you need to maximize your farm&apos;s potential
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
